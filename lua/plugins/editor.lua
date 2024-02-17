@@ -1,6 +1,6 @@
 return {
   {
-    "Lilja/zellij.nvim",
-    path = "z",
+    "christoomey/vim-tmux-navigator",
+    lazy = false,
   },
 }

@@ -12,16 +12,22 @@ map(
 )
 
 -- Zellij
-map("n", "<leader>zl", ":ZellijNavigate<Left><CR>", { noremap = true, silent = true, desc = "Zellij: Navigate Left" })
-map("n", "<leader>zr", ":ZellijNavigate<Right><CR>", { noremap = true, silent = true, desc = "Zellij: Navigate Right" })
-map("n", "<leader>zj", ":ZellijNavigate<Down><CR>", { noremap = true, silent = true, desc = "Zellij: Navigate Down" })
-map("n", "<leader>zk", ":ZellijNavigate<Up><CR>", { noremap = true, silent = true, desc = "Zellij: Navigate Up" })
-map("n", "<leader>zn", ":ZellijNewPane<CR>", { noremap = true, silent = true, desc = "Zellij: Create New Pane" })
-map("n", "<leader>zt", ":ZellijNewTab<CR>", { noremap = true, silent = true, desc = "Zellij: Create New Tab" })
-map(
-  "n",
-  "<leader>zrp",
-  ":ZellijRenamePane<CR>",
-  { noremap = true, silent = true, desc = "Zellij: Rename Current Pane" }
-)
-map("n", "<leader>zrt", ":ZellijRenameTab<CR>", { noremap = true, silent = true, desc = "Zellij: Rename Current Tab" })
+-- map("n", "<leader>zl", ":ZellijNavigate<Left><CR>", { noremap = true, silent = true, desc = "Zellij: Navigate Left" })
+-- map("n", "<leader>zr", ":ZellijNavigate<Right><CR>", { noremap = true, silent = true, desc = "Zellij: Navigate Right" })
+-- map("n", "<leader>zj", ":ZellijNavigate<Down><CR>", { noremap = true, silent = true, desc = "Zellij: Navigate Down" })
+-- map("n", "<leader>zk", ":ZellijNavigate<Up><CR>", { noremap = true, silent = true, desc = "Zellij: Navigate Up" })
+-- map("n", "<leader>zn", ":ZellijNewPane<CR>", { noremap = true, silent = true, desc = "Zellij: Create New Pane" })
+-- map("n", "<leader>zt", ":ZellijNewTab<CR>", { noremap = true, silent = true, desc = "Zellij: Create New Tab" })
+-- map(
+--   "n",
+--   "<leader>zrp",
+--   ":ZellijRenamePane<CR>",
+--   { noremap = true, silent = true, desc = "Zellij: Rename Current Pane" }
+-- )
+-- map("n", "<leader>zrt", ":ZellijRenameTab<CR>", { noremap = true, silent = true, desc = "Zellij: Rename Current Tab" })
+
+-- Tmux
+map("n", "<C-h>", "<cmd> TmuxNavigateLeft<CR>window left")
+map("n", "<C-l>", "<cmd> TmuxNavigateRight<CR>window right")
+map("n", "<C-j>", "<cmd> TmuxNavigateDown<CR>window down")
+map("n", "<C-k>", "<cmd> TmuxNavigateUp<CR>window up")

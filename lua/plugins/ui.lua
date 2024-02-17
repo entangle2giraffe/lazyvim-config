@@ -3,7 +3,7 @@ return {
     "nvim-lualine/lualine.nvim",
     opts = function(_, opts)
       opts.options = {
-        theme = "OceanicNext",
+        theme = "nightfox",
         component_separators = { left = "", right = "" },
         section_separators = { left = "", right = "" },
       }
